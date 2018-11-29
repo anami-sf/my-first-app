@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'courses/index'
   root 'greeter#hello'
   
   get 'hello', to: 'greeter#hello'
