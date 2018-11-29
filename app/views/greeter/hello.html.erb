@@ -1,2 +1,19 @@
-<h1>Greeter#hello</h1>
-<p>Find me in app/views/greeter/hello.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <p>Hello, <%=@name%></p>
+   <p>Today is <%=formatted_date(@time)%></p>
+    <p>The time now is <%=formatted_time(@time)%></p>
+    <p>What sould you like to learn today?</p>
+    <p><%=link_to 'Google', "https://www.google.com/"%></p>
+</body>
+</html>
+
