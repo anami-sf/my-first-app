@@ -1,2 +1,27 @@
-<h1>Courses#index</h1>
-<p>Find me in app/views/courses/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Image</th>
+            <th>Nmae</th>
+            <th>Description</th>
+        </tr>
+        <% @courses.each do |course| %>
+        <tr>
+            <td><%=image_tag(course["smallIcon"])%></td>
+            <td><%=course["name"]%></td>
+            <td><%=course["shortDesription"]%></td>
+        </tr>
+        <%end%>
+    </table>
+</body>
+</html>
